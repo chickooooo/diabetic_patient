@@ -1,0 +1,1 @@
+## Model that predicts whether a patient has diabeties or not

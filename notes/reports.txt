@@ -1,0 +1,36 @@
+Model 1: Logistic Regression
+features: all
+parameters: default
+performance metric: recall, precision
+train set score: 0.57, 0.74
+cross validation score: 0.55, 0.72
+note: under fitting
+
+
+Model 2: Logistic Regression
+features: ['pregnancies', 'glucose', 'blood_pressure', 'bmi', 'dpf', 'age']
+parameters: {threshold = 0.3}
+performance metric: recall, precision
+train set score: 0.79, 0.60
+cross validation score: 0.78, 0.60
+note: under fitting
+
+
+Model 2: Support Vector Classifier (selected model)
+features: ['pregnancies', 'glucose', 'blood_pressure', 'bmi', 'dpf', 'age']
+parameters: {kernel = "linear", threshold = 0.3}
+performance metric: recall, precision
+train set score: 0.80, 0.61
+cross validation score: 0.80, 0.60
+note: ideal
+
+
+Performance on test set:
+accuracy: 0.75                  (model has 75% effeciency to distinguish between diabetic and non-diabetic patient)
+recall: 0.85                    (model was able to detect 85% of diabetic patients)
+precision: 0.61                 (out of all positive patients, only 61% where actually having diabeties)
+
+
+Note: model with higher recall than precision was preferred to reduce false negatives
+      (patients that are having diabeties but were classified as non-diabetic),
+      while maintaining precision.

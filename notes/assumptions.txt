@@ -1,0 +1,4 @@
+- NA values in glucose attribute are filled with median
+- NA values in blood_pressure attribute are filled with median
+- NA values in skin_thickness attribute are filled with median
+- NA values in bmi attribute are filled with median
