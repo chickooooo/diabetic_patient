@@ -30,10 +30,10 @@ y_test.shape
 -------
 - remove more than 11 pregnancies if important feature (outliers)
 
-- 1/3 of values in skin_thickness are NA
+- 1/3 of values in skin_thickness are NULL
 - remove more than 55 skin_thickness (heavy outliers)
 
-- half of values in insulin are NA
+- half of values in insulin are NULL
 - remove more than 500 insulin (outliers)
 
 - remove more than 50 bmi (outliers)
